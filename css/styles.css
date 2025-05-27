@@ -1,0 +1,62 @@
+body {
+    background-color: #ffe6f0; /* rosa pastel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hbd {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 3rem;
+    color: #ff66cc;
+    background-color: #fff0f5;
+    padding: 20px 30px;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px rgba(255, 102, 204, 0.2);
+    text-shadow: 1px 1px #fff;
+    animation: bounceUwU 2s ease infinite;
+    border: 2px dashed #ff99cc;
+    transition: transform 0.3s;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.msg {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 3rem;
+    color: #ff66cc;
+    background-color: #fff0f5;
+    padding: 20px 30px;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px rgba(255, 102, 204, 0.2);
+    text-shadow: 1px 1px #fff;
+    animation: bounceUwU 2s ease infinite;
+    border: 2px dashed #ff99cc;
+    transition: transform 0.3s;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 150px; /* Espacio entre imágenes */
+  margin-top: 20px;
+}
+
+.img {
+  width: 250px; /* O el tamaño que prefieras */
+  border-radius: 10px;
+}
+
+
+/* 🌸 Animación kawaii */
+@keyframes bounceUwU {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
