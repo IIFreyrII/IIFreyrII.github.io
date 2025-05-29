@@ -134,3 +134,7 @@ body {
   z-index: -1; /* Manda el video al fondo */
   opacity: 0.5; /* Opcional: ajusta la visibilidad */
 }
+
+audio {
+  display: none;
+}
