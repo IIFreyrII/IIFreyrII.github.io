@@ -1,5 +1,5 @@
 body {
-    background-color: #ffe6f0; /* rosa pastel */
+    background-color: rgba(255, 240, 245, 0.4);; /* rosa pastel */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,35 +8,22 @@ body {
     margin: 0;
 }
 
-.hbd {
-    font-family: 'Cherry Bomb One', cursive;
-    font-size: 3rem;
-    color: #ff66cc;
-    background-color: #fff0f5;
-    padding: 20px 30px;
-    border-radius: 25px;
-    box-shadow: 0 6px 10px rgba(255, 102, 204, 0.2);
-    text-shadow: 1px 1px #fff;
-    animation: bounce 2s ease infinite;
-    border: 2px dashed #ff99cc;
-    transition: transform 0.3s;
-    transform: scale(1.1) rotate(-2deg);
-}
-
+.hbd,
 .msg {
     font-family: 'Cherry Bomb One', cursive;
     font-size: 3rem;
     color: #ff66cc;
-    background-color: #fff0f5;
+    background-color: rgba(255, 240, 245, 0.4); /* <- más transparente */
     padding: 20px 30px;
     border-radius: 25px;
-    box-shadow: 0 6px 10px rgba(255, 102, 204, 0.2);
-    text-shadow: 1px 1px #fff;
+    box-shadow: 0 6px 10px rgba(255, 102, 204, 0.1); /* <- menos sombra */
+    text-shadow: none; /* <- menos saturación, opcional */
     animation: bounce 2s ease infinite;
-    border: 2px dashed #ff99cc;
+    border: 2px dashed rgba(255, 153, 204, 0.5); /* borde más sutil */
     transition: transform 0.3s;
     transform: scale(1.1) rotate(-2deg);
 }
+
 
 .contenedor-imagenes {
   display: flex;
@@ -135,4 +122,15 @@ body {
     .img {
         width: 140px;
     }
+}
+
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Manda el video al fondo */
+  opacity: 0.5; /* Opcional: ajusta la visibilidad */
 }
